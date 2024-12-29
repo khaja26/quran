@@ -36,30 +36,9 @@
     </style>
 </head>
 <body>
-    <h1>PDF with Controls Example</h1>
+    <center><h1>Quran</h1></center>
     <div class="pdf-container">
-        <iframe id="pdf-iframe" src="https:/yourfilename.com" class="pdf-viewer"></iframe>
-        <div class="pdf-controls">
-            <button onclick="zoomIn()">Zoom In</button>
-            <button onclick="zoomOut()">Zoom Out</button>
-            <a href="yourfile.pdf" download><button>Download PDF</button></a>
-        </div>
-    </div>
-
-    <script>
-        function zoomIn() {
-            const iframe = document.getElementById('pdf-iframe');
-            let zoom = iframe.style.zoom || 1;
-            zoom = parseFloat(zoom) + 0.1;
-            iframe.style.zoom = zoom;
-        }
-
-        function zoomOut() {
-            const iframe = document.getElementById('pdf-iframe');
-            let zoom = iframe.style.zoom || 1;
-            zoom = parseFloat(zoom) - 0.1;
-            iframe.style.zoom = zoom;
-        }
-    </script>
+        <iframe id="pdf-iframe" src="quran.pdf" class="pdf-viewer"></iframe>       
+    </div>     
 </body>
 </html>
